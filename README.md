@@ -42,7 +42,7 @@ Para testar ou reproduzir este projeto, faça o download dos ficheiros necessár
 
 ### 1. Apenas para Inferência (Testar o Auto-Cropping)
 Se desejar apenas usar o modelo já treinado para recortar novas radiografias:
-* **Download:** [Pesos do Modelo - melhor_retinanet_cotovelo.pth](https://drive.google.com/file/d/1Xt62SkrMFAQH8RlWNUx0dT4113Fe1Vyh/view?usp=drive_link)
+* **Download:** [models - melhor_retinanet_cotovelo.pth](https://drive.google.com/file/d/1Xt62SkrMFAQH8RlWNUx0dT4113Fe1Vyh/view?usp=drive_link)
 * **Onde colocar:** Guarde o ficheiro dentro da pasta `models/`.
 
 ### 2. Para Treino Completo (Replicar o Estudo)
