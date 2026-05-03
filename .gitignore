@@ -1,0 +1,18 @@
+# Imagens e Datasets
+train/
+test/
+valid/
+Dataset_Cotovelo_ML/
+Dataset_Recortado_Diagnostico/
+*.jpg
+*.png
+*.xml
+
+# Modelos e Pesos (Ficheiros grandes)
+*.pth
+
+# Pastas de sistema e Python
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
