@@ -34,5 +34,21 @@ Desenvolver uma ferramenta de **Auto-Cropping** utilizando a arquitetura **Retin
 
 2. Hardware: Recomenda-se o uso de uma GPU compatível com CUDA para a execução do ciclo de treino e inferência em massa.
 
+## Base de Dados e Pesos do Modelo (Downloads)
+
+Devido aos limites de armazenamento do GitHub, os ficheiros pesados (dataset de imagens e o modelo treinado) estão alojados externamente no Google Drive. 
+
+Para testar ou reproduzir este projeto, faça o download dos ficheiros necessários abaixo e mantenha a estrutura de pastas original:
+
+### 1. Apenas para Inferência (Testar o Auto-Cropping)
+Se desejar apenas usar o modelo já treinado para recortar novas radiografias:
+* **Download:** [Pesos do Modelo - melhor_retinanet_cotovelo.pth](https://drive.google.com/file/d/1Xt62SkrMFAQH8RlWNUx0dT4113Fe1Vyh/view?usp=drive_link)
+* **Onde colocar:** Guarde o ficheiro dentro da pasta `models/`.
+
+### 2. Para Treino Completo (Replicar o Estudo)
+Se deseja treinar a RetinaNet do zero, precisará das imagens e das respetivas bounding boxes (anotações XML do Roboflow):
+* **Download:** [Dataset_Cotovelo_ML - Roboflow_83_Epicondyle_annotations_voc](https://drive.google.com/drive/folders/11pGQDmzj5rLu_WR-uFteUiLz0iGQaxux?usp=drive_link) *(Acesso restrito a avaliadores e equipa de investigação)*
+* **Onde colocar:** Após o download, extraia a pasta na raiz do projeto. A estrutura deve ser tal que, a partir da pasta `scripts/`, o caminho relativo seja `../Dataset_Cotovelo_ML/`.
+
 ## Referências
 Hauback, et al. (2025). Deep learning can detect elbow disease in dogs screened for elbow dysplasia.
