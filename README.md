@@ -16,6 +16,17 @@ Desenvolver uma ferramenta de **Auto-Cropping** utilizando a arquitetura **Retin
 - **Expansão**: Aplicação de um fator de expansão de 5x sobre a bounding box detectada. Este multiplicador assegura a inclusão de toda a anatomia articular necessária ao diagnóstico, abrangendo a incisura troclear da ulna e a cabeça do rádio.
 - **Padronização**: Redimensionamento dos recortes para 800x800 pixels. A aplicação de padding lateral ou vertical garante a preservação da proporção anatómica original, evitando distorções ósseas artificiais.
 
+## Conjunto de Dados (Dataset)
+As marcações da região de interesse (bounding boxes) foram anotadas manualmente utilizando a plataforma **Roboflow**. O dataset inicial conta com **83 imagens**, divididas da seguinte forma:
+- **Treino (Train Set):** 58 imagens (70%)
+- **Validação (Valid Set):** 17 imagens (20%)
+- **Teste (Test Set):** 8 imagens (10%)
+
+**Pré-processamento aplicado:**
+- *Auto-Orient*: Aplicado.
+- *Resize*: Fit (black edges) para 800x800 pixels.
+- *Augmentations*: Nenhuma técnica aplicada nesta fase.
+
 ## Resultados Atuais
 - Treino realizado em GPU (NVIDIA GTX 1650 Ti).
 - Implementação de Checkpointing baseado em IoU (Intersection over Union) no conjunto de validação para garantir a seleção do modelo com melhor capacidade de generalização.
@@ -42,7 +53,7 @@ Para testar ou reproduzir este projeto, faça o download dos ficheiros necessár
 
 ### 1. Apenas para Inferência (Testar o Auto-Cropping)
 Se desejar apenas usar o modelo já treinado para recortar novas radiografias:
-* **Download:** [Pesos do Modelo - melhor_retinanet_cotovelo.pth](https://drive.google.com/file/d/1Xt62SkrMFAQH8RlWNUx0dT4113Fe1Vyh/view?usp=drive_link)
+* **Download:** [models - melhor_retinanet_cotovelo.pth](https://drive.google.com/file/d/1Xt62SkrMFAQH8RlWNUx0dT4113Fe1Vyh/view?usp=drive_link)
 * **Onde colocar:** Guarde o ficheiro dentro da pasta `models/`.
 
 ### 2. Para Treino Completo (Replicar o Estudo)
