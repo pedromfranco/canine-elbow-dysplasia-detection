@@ -58,7 +58,7 @@ Se desejar apenas usar o modelo já treinado para recortar novas radiografias:
 
 ### 2. Para Treino Completo (Replicar o Estudo)
 Se deseja treinar a RetinaNet do zero, precisará das imagens e das respetivas bounding boxes (anotações XML do Roboflow):
-* **Download:** [Dataset_Cotovelo_ML - Roboflow_83_Epicondyle_annotations_voc](https://drive.google.com/drive/folders/11pGQDmzj5rLu_WR-uFteUiLz0iGQaxux?usp=drive_link) *(Acesso restrito a avaliadores e equipa de investigação)*
+* **Download:** [Dataset_Cotovelo_ML - Roboflow_83_Epicondyle_annotations_voc](https://drive.google.com/drive/folders/11pGQDmzj5rLu_WR-uFteUiLz0iGQaxux?usp=drive_link) *(Acesso restrito a equipa de investigação)*
 * **Onde colocar:** Após o download, extraia a pasta na raiz do projeto. A estrutura deve ser tal que, a partir da pasta `scripts/`, o caminho relativo seja `../Dataset_Cotovelo_ML/`.
 
 ## Referências
