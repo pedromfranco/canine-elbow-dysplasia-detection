@@ -3,7 +3,7 @@
 Este projeto implementa a primeira fase de um sistema de diagnóstico de displasia do cotovelo canino, baseado na metodologia do estudo de **Hauback et al. (2025)**.
 
 ## Objetivo
-Desenvolver uma ferramenta de **Auto-Cropping** utilizando a arquitetura **RetinaNet** para localizar e recortar automaticamente a região epicondilar umeral em radiografias digitais. Este processo garante que a fase de diagnóstico receba imagens padronizadas e focadas na área de interesse clínico.
+Desenvolver uma ferramenta de **Auto-Cropping** utilizando a arquitetura **RetinaNet** para localizar automaticamente a região epicondilar umeral e recortar a região do cotovelo em radiografias digitais. Este processo garante que a fase de diagnóstico receba imagens padronizadas e focadas na área de interesse clínico.
 
 ## Tecnologias Utilizadas
 - **Python 3.13.0**
